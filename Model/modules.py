@@ -140,7 +140,7 @@ def unet_function(X_train, y_train, X_valid, y_valid, X_test, y_test, dataset = 
   
   #train and evaluate
   results = train_unet(unet, X_train=X_train, y_train=y_train, X_valid=X_valid, y_valid=y_valid, X_test=X_test, y_test=y_test, dataset=dataset,
-                            loss = loss, optimizer=optimizer, callback_type = callback_type, callbacks = callbacks,
+                            loss = loss, callback_type = callback_type, callbacks = callbacks,
                             n_layers=n_layers, n_filters=n_filters,
                             batch_size=batch_size, epochs=epochs)
 
